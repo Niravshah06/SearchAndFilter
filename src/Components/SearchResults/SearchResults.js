@@ -9,8 +9,8 @@ class SearchResults extends React.Component {
                    
                
 
-                {this.props.data.map(article => {
-                    return (<li key={article.url}>
+                {this.props.data && this.props.data.map(article => {
+                    return (<li>
                         <a href={article.url} target="_blank" rel="noopener noreferrer">
                             {article.title}
                         </a>

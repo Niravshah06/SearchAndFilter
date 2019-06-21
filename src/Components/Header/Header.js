@@ -9,7 +9,6 @@ class Header extends React.Component {
     super(props);
     this.state = {
       showLoginModal: false,
-      showLogoutModal: false
     }
     this.onClickItem = this.onClickItem.bind(this);
     this.loginUser = this.loginUser.bind(this);
@@ -18,26 +17,33 @@ class Header extends React.Component {
 
   }
   onClickItem(item) {
-    alert(item)
+    // alert(item)
     if (item === 'login') {
       this.setState({ showLoginModal: true });
     }
     if (item === 'logout') {
 
-      alert("Sucessfully ,logged out");
-      //clear out local storage 
+      localStorage.removeItem('user');
+  alert("logout sucesfull")
     }
   }
   loginUser(data) {
-    alert(data);
+    if (data) {
+      if (data.name === 'nirav' && data.password === 'shah') {
+        alert("login sucesfull")
+        this.setState({ showLoginModal: false });
+        localStorage.setItem('user', JSON.stringify(data));
+        return;
+      }
+    }
+    alert("login unsucessfull")
   }
+
 
   closeLoginModal() {
     this.setState({ showLoginModal: false });
   }
-  closeLogoutModal() {
-    this.setState({ showLogoutModal: false });
-  }
+ 
   render() {
 
     return (

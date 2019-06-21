@@ -14,7 +14,6 @@ class LoginModal extends Component {
         this.clearData = this.clearData.bind(this);
         this.closeModal = this.closeModal.bind(this);
         this.handleSubmit = this.handleSubmit.bind(this);
-        this.handleValidation = this.handleValidation.bind(this);
 
     }
 
@@ -32,11 +31,7 @@ class LoginModal extends Component {
         let data = this.state;
         this.props.callback(data);
     }
-    handleValidation() {
-        //make sure all the properties are non empty
-        let valid = (this.state.name !== '' && this.state.password !== '')
-        return valid;
-    }
+
 
 
     closeModal() {
@@ -46,12 +41,12 @@ class LoginModal extends Component {
 
     handleChange(event) {
         let value = event.target.value;
-        let name=event.target.name;
+        let name = event.target.name;
         this.setState({
             [name]: value
         });
-        }
-    
+    }
+
 
 
     render() {
@@ -68,24 +63,25 @@ class LoginModal extends Component {
 
 
                     <div className={styles.modalTitle}>Login</div>
-                    
-                    <div className={styles.inputControls}>
-                    
-                    <span>Name</span>
-                    <input type="text" title="Name" name="name" value={this.state.name} onChange={this.handleChange} />
-                    
-                    <span>Password</span>
-                    <input type="text" title="password" name="password" value={this.state.name} onChange={this.handleChange} />
-                    </div>
-                    <div className={styles.formControls}></div>
-                    <button name='submit' type="submit"
-                     inactive={!this.handleValidation()} 
-                     onClick={this.handleSubmit} >submit</button>
+                    <form onSubmit={this.handleSubmit}>
+                        <div className={styles.inputControls}>
 
-                    <button className={styles.marginLeft50}
-                         onClick={this.clearData}>
-                    Reset</button>
-                    
+                            <span>Name</span>
+                            <input required type="text" title="Name" name="name" value={this.state.name} onChange={this.handleChange} />
+
+                            <span>Password</span>
+                            <input required type="text" title="password" name="password" value={this.state.password} onChange={this.handleChange} />
+                        </div>
+                        <div className={styles.formControls}></div>
+
+
+                        <button type="submit" value="Submit">Submit</button>
+
+
+                        <button className={styles.marginLeft50}
+                            onClick={this.clearData}>
+                            Reset</button>
+                    </form>
 
                 </Modal>
 

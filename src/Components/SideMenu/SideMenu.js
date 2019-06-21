@@ -16,6 +16,7 @@ class SideMenu extends React.Component {
         this.props.clickedItem(item);
     }
     render() {
+const item=!localStorage.getItem('user') ? <div onClick={()=>this.onClickItem("login")}>Login</div>:<div onClick={()=>this.onClickItem("logout")}>logout</div>;
 
         return (
             <div style={{marginTop: 25}}>
@@ -26,9 +27,9 @@ class SideMenu extends React.Component {
                     showNav={this.state.showNav}
                     onHideNav={() => this.setState({ showNav: false })}
                     title="Menu"
-                    items={[
-                        <div onClick={()=>this.onClickItem("login")}>Login</div>,
-                        <div onClick={()=>this.onClickItem("logout")}>logout</div>
+                    items={[item,
+                        <a href="/">Home</a>,
+                    
                     ]} 
                     titleStyle={{ color: 'black',backgroundColor:'grey' }}
                     itemStyle={{ color: 'black',backgroundColor:'lightgrey' }}

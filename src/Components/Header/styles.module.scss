@@ -1,0 +1,27 @@
+
+.title
+{
+width: auto;
+height: 150px;
+color: darkgrey;
+position: fixed;
+}
+
+.parent{
+background-color: #444444;
+color: #fff;
+height: 100px;
+display: grid;
+grid-template-columns: 1fr 3fr;
+
+}
+.logo{
+    width: auto;
+    height: 80px;
+    margin-left: 50px;
+    position: fixed;
+    top: 0px;
+}
+.marginTop{
+    margin-top: 25px;
+}

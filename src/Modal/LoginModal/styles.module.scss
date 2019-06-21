@@ -1,0 +1,53 @@
+
+
+.marginLeft50
+  {
+
+    margin-left: 50px
+  }
+
+  .formControls{
+    margin: 20px 0;
+  }
+
+.inputControls
+{
+
+  display: grid;
+grid-template-columns: 1fr 3fr;
+}
+
+.modalTitle{
+  font-size: 18px;
+  line-height: 14px;
+  font-weight: 600;
+  padding: 10px 0;
+  border-bottom: solid 1px green;
+
+}
+
+
+.overlay{
+  background-color: rgba(0, 0, 0, 0.5);
+  position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+}
+.content {
+  top: 50px;
+  left: 25%;
+  right: auto;
+  bottom: auto;
+  margin-right: -50%;
+  border: solid 3px #00a88f;
+  position: absolute;
+  background: #fff;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  border-radius: 4px;
+  outline: none;
+  padding: 20px;
+ 
+}

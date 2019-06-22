@@ -40,7 +40,7 @@ class Search extends React.Component {
     render() {
 
         return (
-            <div className={styles.searchParent}>
+            <div id="search" className={styles.searchParent}>
 
                 <SearchBar performSearch={this.performSearch} />
                 <SearchResults data={this.state.articles} />

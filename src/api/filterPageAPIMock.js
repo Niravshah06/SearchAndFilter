@@ -1,4 +1,4 @@
-[
+const job_data=[
     {
         "job_id": 1,
         "job_desc": "euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
@@ -7,7 +7,7 @@
         "city": "Yakima",
         "state": "Washington",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Nurse"
     },
     {
@@ -18,7 +18,7 @@
         "city": "Arlington",
         "state": "Virginia",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Business Systems Development Analyst"
     },
     {
@@ -29,7 +29,7 @@
         "city": "Jackson",
         "state": "Mississippi",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Clinical Specialist"
     },
     {
@@ -40,7 +40,7 @@
         "city": "Houston",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Internal Auditor"
     },
     {
@@ -51,7 +51,7 @@
         "city": "Metairie",
         "state": "Louisiana",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Assistant Media Planner"
     },
     {
@@ -62,7 +62,7 @@
         "city": "Philadelphia",
         "state": "Pennsylvania",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Recruiter"
     },
     {
@@ -73,7 +73,7 @@
         "city": "San Jose",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Chief Design Engineer"
     },
     {
@@ -84,7 +84,7 @@
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Research Nurse"
     },
     {
@@ -95,7 +95,7 @@
         "city": "Peoria",
         "state": "Illinois",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Project Manager"
     },
     {
@@ -106,7 +106,7 @@
         "city": "Denver",
         "state": "Colorado",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Marketing Assistant"
     },
     {
@@ -117,7 +117,7 @@
         "city": "Clearwater",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Clinical Specialist"
     },
     {
@@ -128,7 +128,7 @@
         "city": "Pocatello",
         "state": "Idaho",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Recruiting Manager"
     },
     {
@@ -139,7 +139,7 @@
         "city": "Cleveland",
         "state": "Ohio",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Graphic Designer"
     },
     {
@@ -150,7 +150,7 @@
         "city": "Orlando",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Analog Circuit Design manager"
     },
     {
@@ -161,7 +161,7 @@
         "city": "Greensboro",
         "state": "North Carolina",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Developer IV"
     },
     {
@@ -172,7 +172,7 @@
         "city": "Las Vegas",
         "state": "Nevada",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Pharmacist"
     },
     {
@@ -183,7 +183,7 @@
         "city": "Columbus",
         "state": "Ohio",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Design Engineer"
     },
     {
@@ -194,7 +194,7 @@
         "city": "Stamford",
         "state": "Connecticut",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Environmental Tech"
     },
     {
@@ -205,7 +205,7 @@
         "city": "Largo",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Physical Therapy Assistant"
     },
     {
@@ -216,7 +216,7 @@
         "city": "Myrtle Beach",
         "state": "South Carolina",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Engineer II"
     },
     {
@@ -227,7 +227,7 @@
         "city": "Philadelphia",
         "state": "Pennsylvania",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Budget/Accounting Analyst III"
     },
     {
@@ -238,7 +238,7 @@
         "city": "Beaufort",
         "state": "South Carolina",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Dental Hygienist"
     },
     {
@@ -249,7 +249,7 @@
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Research Nurse"
     },
     {
@@ -260,7 +260,7 @@
         "city": "Boston",
         "state": "Massachusetts",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Quality Engineer"
     },
     {
@@ -271,7 +271,7 @@
         "city": "Norcross",
         "state": "Georgia",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Biostatistician III"
     },
     {
@@ -282,7 +282,7 @@
         "city": "Garden Grove",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Accountant II"
     },
     {
@@ -293,7 +293,7 @@
         "city": "Hampton",
         "state": "Virginia",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Accounting Assistant III"
     },
     {
@@ -304,7 +304,7 @@
         "city": "Wilmington",
         "state": "Delaware",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Staff Accountant IV"
     },
     {
@@ -315,7 +315,7 @@
         "city": "Sacramento",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Assistant Professor"
     },
     {
@@ -326,7 +326,7 @@
         "city": "Fort Worth",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Quality Engineer"
     },
     {
@@ -337,7 +337,7 @@
         "city": "Des Moines",
         "state": "Iowa",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Media Manager I"
     },
     {
@@ -348,7 +348,7 @@
         "city": "East Saint Louis",
         "state": "Illinois",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Recruiter"
     },
     {
@@ -359,7 +359,7 @@
         "city": "Arlington",
         "state": "Virginia",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Database Administrator II"
     },
     {
@@ -370,7 +370,7 @@
         "city": "Birmingham",
         "state": "Alabama",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Software Consultant"
     },
     {
@@ -381,7 +381,7 @@
         "city": "Seattle",
         "state": "Washington",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Information Systems Manager"
     },
     {
@@ -392,7 +392,7 @@
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Teacher"
     },
     {
@@ -403,7 +403,7 @@
         "city": "San Antonio",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Nurse"
     },
     {
@@ -414,7 +414,7 @@
         "city": "Fort Wayne",
         "state": "Indiana",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Paralegal"
     },
     {
@@ -425,7 +425,7 @@
         "city": "Miami Beach",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Chemical Engineer"
     },
     {
@@ -436,7 +436,7 @@
         "city": "Katy",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Quality Control Specialist"
     },
     {
@@ -447,7 +447,7 @@
         "city": "Arlington",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Data Coordiator"
     },
     {
@@ -458,7 +458,7 @@
         "city": "Minneapolis",
         "state": "Minnesota",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Recruiter"
     },
     {
@@ -469,7 +469,7 @@
         "city": "Pompano Beach",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Staff Scientist"
     },
     {
@@ -480,7 +480,7 @@
         "city": "Jacksonville",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Clinical Specialist"
     },
     {
@@ -491,7 +491,7 @@
         "city": "Oklahoma City",
         "state": "Oklahoma",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Marketing Assistant"
     },
     {
@@ -502,7 +502,7 @@
         "city": "Baton Rouge",
         "state": "Louisiana",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Financial Advisor"
     },
     {
@@ -513,7 +513,7 @@
         "city": "Abilene",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Office Assistant III"
     },
     {
@@ -524,7 +524,7 @@
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Account Coordinator"
     },
     {
@@ -535,7 +535,7 @@
         "city": "Florence",
         "state": "South Carolina",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Safety Technician II"
     },
     {
@@ -546,7 +546,7 @@
         "city": "Fresno",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Speech Pathologist"
     },
     {
@@ -557,7 +557,7 @@
         "city": "Wichita Falls",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Project Manager"
     },
     {
@@ -568,7 +568,7 @@
         "city": "Mobile",
         "state": "Alabama",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Structural Analysis Engineer"
     },
     {
@@ -579,7 +579,7 @@
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "VP Marketing"
     },
     {
@@ -590,7 +590,7 @@
         "city": "Santa Rosa",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Human Resources Manager"
     },
     {
@@ -601,7 +601,7 @@
         "city": "Jackson",
         "state": "Mississippi",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Developer II"
     },
     {
@@ -612,7 +612,7 @@
         "city": "Arlington",
         "state": "Virginia",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Automation Specialist I"
     },
     {
@@ -623,7 +623,7 @@
         "city": "Austin",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Research Nurse"
     },
     {
@@ -634,7 +634,7 @@
         "city": "Danbury",
         "state": "Connecticut",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Executive Secretary"
     },
     {
@@ -645,7 +645,7 @@
         "city": "Inglewood",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Executive Secretary"
     },
     {
@@ -656,7 +656,7 @@
         "city": "Wichita Falls",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Operator"
     },
     {
@@ -667,7 +667,7 @@
         "city": "Winston Salem",
         "state": "North Carolina",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Database Administrator III"
     },
     {
@@ -678,7 +678,7 @@
         "city": "Bakersfield",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Structural Engineer"
     },
     {
@@ -689,7 +689,7 @@
         "city": "Rochester",
         "state": "New York",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Biostatistician I"
     },
     {
@@ -700,7 +700,7 @@
         "city": "Spartanburg",
         "state": "South Carolina",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Social Worker"
     },
     {
@@ -711,7 +711,7 @@
         "city": "New York City",
         "state": "New York",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Accounting Assistant II"
     },
     {
@@ -722,7 +722,7 @@
         "city": "Kansas City",
         "state": "Kansas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Programmer I"
     },
     {
@@ -733,7 +733,7 @@
         "city": "Battle Creek",
         "state": "Michigan",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Software Consultant"
     },
     {
@@ -744,18 +744,18 @@
         "city": "New Orleans",
         "state": "Louisiana",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Internal Auditor"
     },
     {
         "job_id": 69,
-        "job_desc": "nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede malesuada in imperdiet et",
+        "job_desc": "nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede Part-timesuada in imperdiet et",
         "compnay_name": "Viva",
         "date": "4/25/2019",
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Help Desk Operator"
     },
     {
@@ -766,18 +766,18 @@
         "city": "Corpus Christi",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Web Developer II"
     },
     {
         "job_id": 71,
-        "job_desc": "odio cras mi pede malesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet",
+        "job_desc": "odio cras mi pede Part-timesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet",
         "compnay_name": "Trupe",
         "date": "2/5/2019",
         "city": "Norwalk",
         "state": "Connecticut",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Tax Accountant"
     },
     {
@@ -788,7 +788,7 @@
         "city": "Wilkes Barre",
         "state": "Pennsylvania",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Physical Therapy Assistant"
     },
     {
@@ -799,7 +799,7 @@
         "city": "Greeley",
         "state": "Colorado",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Desktop Support Technician"
     },
     {
@@ -810,7 +810,7 @@
         "city": "Brooklyn",
         "state": "New York",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Junior Executive"
     },
     {
@@ -821,7 +821,7 @@
         "city": "Hayward",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Project Manager"
     },
     {
@@ -832,7 +832,7 @@
         "city": "Fort Worth",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Chemical Engineer"
     },
     {
@@ -843,7 +843,7 @@
         "city": "Flint",
         "state": "Michigan",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Senior Financial Analyst"
     },
     {
@@ -854,7 +854,7 @@
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Software Test Engineer IV"
     },
     {
@@ -865,7 +865,7 @@
         "city": "Fullerton",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Biostatistician IV"
     },
     {
@@ -876,7 +876,7 @@
         "city": "Trenton",
         "state": "New Jersey",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Structural Analysis Engineer"
     },
     {
@@ -887,7 +887,7 @@
         "city": "Lexington",
         "state": "Kentucky",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Systems Administrator III"
     },
     {
@@ -898,7 +898,7 @@
         "city": "Miami",
         "state": "Florida",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Senior Cost Accountant"
     },
     {
@@ -909,7 +909,7 @@
         "city": "Irving",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Analog Circuit Design manager"
     },
     {
@@ -920,7 +920,7 @@
         "city": "Portland",
         "state": "Oregon",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Biostatistician IV"
     },
     {
@@ -931,7 +931,7 @@
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Structural Engineer"
     },
     {
@@ -942,7 +942,7 @@
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Automation Specialist I"
     },
     {
@@ -953,7 +953,7 @@
         "city": "Houston",
         "state": "Texas",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Mechanical Systems Engineer"
     },
     {
@@ -964,7 +964,7 @@
         "city": "Van Nuys",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Clinical Specialist"
     },
     {
@@ -975,7 +975,7 @@
         "city": "Boston",
         "state": "Massachusetts",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Librarian"
     },
     {
@@ -986,7 +986,7 @@
         "city": "Chula Vista",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "VP Quality Control"
     },
     {
@@ -997,7 +997,7 @@
         "city": "Newport News",
         "state": "Virginia",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Operator"
     },
     {
@@ -1008,7 +1008,7 @@
         "city": "Mesa",
         "state": "Arizona",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Nurse"
     },
     {
@@ -1019,7 +1019,7 @@
         "city": "San Diego",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Software Engineer II"
     },
     {
@@ -1030,7 +1030,7 @@
         "city": "Evansville",
         "state": "Indiana",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "Quality Engineer"
     },
     {
@@ -1041,7 +1041,7 @@
         "city": "Baltimore",
         "state": "Maryland",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Actuary"
     },
     {
@@ -1052,7 +1052,7 @@
         "city": "Philadelphia",
         "state": "Pennsylvania",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Speech Pathologist"
     },
     {
@@ -1063,7 +1063,7 @@
         "city": "Paterson",
         "state": "New Jersey",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Librarian"
     },
     {
@@ -1074,7 +1074,7 @@
         "city": "Oakland",
         "state": "California",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Automation Specialist IV"
     },
     {
@@ -1085,7 +1085,7 @@
         "city": "Los Angeles",
         "state": "California",
         "country": "United States",
-        "job_type": "Male",
+        "job_type": "Part-time",
         "job_title": "VP Product Management"
     },
     {
@@ -1096,7 +1096,9 @@
         "city": "Minneapolis",
         "state": "Minnesota",
         "country": "United States",
-        "job_type": "Female",
+        "job_type": "Full-time",
         "job_title": "Junior Executive"
     }
 ]
+
+export {job_data};

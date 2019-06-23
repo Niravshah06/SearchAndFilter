@@ -28,6 +28,8 @@ class SideMenu extends React.Component {
                     title="Menu"
                     items={[item,
                         <a href="/">Home</a>,
+                        <a href="/search">Search</a>,
+                        <a href="/filter">Filter</a>,
 
                     ]}
                     titleStyle={{ color: 'black', backgroundColor: 'grey' }}

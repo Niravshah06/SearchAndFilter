@@ -9,9 +9,9 @@ class FilterPage extends React.Component {
     render() {
 
         return (
-            <div>
-Hello               
-        
+            <div className={styles.gridColumn}>
+<div>1/4</div>               
+<div>3/4</div> 
             </div>
         );
     }

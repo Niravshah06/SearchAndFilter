@@ -16,6 +16,7 @@ class SearchBar extends Component {
     }
     handleSubmit(event) {
         event.preventDefault();
+        this.props.performSearchFromsubmit(this.state.value);
     }
 
 
@@ -35,7 +36,7 @@ class SearchBar extends Component {
 
     }
     callSearch() {
-            this.props.performSearch(this.state.value);
+        this.props.performSearch(this.state.value);
     }
 
 
@@ -45,10 +46,10 @@ class SearchBar extends Component {
 
         return (
             <div>
-                <h1>The Search App</h1>
                 <form onSubmit={this.handleSubmit}>
                     <input name="value"
                         placeholder="Search..."
+                        style={{ width: this.props.width ? this.props.width : 200 }}
                         type="text" className={styles.inputforSearch}
                         value={this.state.value}
                         onChange={this.handleChange}

@@ -3,9 +3,7 @@ import styles from './styles.module.scss'
 import {Search} from '../../Components/Search';
 
 class SearchPage extends React.Component {
-    constructor(props) {
-        super(props);
-    }
+   
 
     render() {
 

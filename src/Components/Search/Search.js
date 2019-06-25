@@ -17,7 +17,7 @@ class Search extends React.Component {
 
     }
     performSearch(value) {
-        
+
         //perform only if length of query is greater than 3
         if (value.length > 3) {
             fetchArticles(value)
@@ -32,17 +32,19 @@ class Search extends React.Component {
 
                 })
         }
-        else
-        {
+        else {
             this.setState({ articles: [] });
         }
     };
     render() {
 
         return (
-            <div id="search" className={styles.searchParent}>
 
-                <SearchBar performSearch={this.performSearch} />
+            <div id="search" className={styles.searchParent}>
+                <h1>The Search App</h1>
+                
+                <SearchBar width={400} performSearchFromsubmit={this.performSearch} performSearch={this.performSearch} />
+    
                 <SearchResults data={this.state.articles} />
             </div>
         );

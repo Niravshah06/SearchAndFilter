@@ -35,21 +35,21 @@ class Sorting extends React.Component {
             <div id="sortingOptions">
             <span>Sort By :</span>
                 {this.props.sortingOptions.map(option => {
-                    return (<a onClick={() => this.onPropertyClick(option)}
+                    return (<span onClick={() => this.onPropertyClick(option)} 
                         className={sortProperty === option ?
-                            styles.anchorClassActive : styles.anchorClass}>{option}</a>)
+                            styles.anchorClassActive : styles.anchorClass}>{option}</span>)
                 })
                 }
             </div>
             <div id="orderingOption">
             <span>Sort Direction :</span>
-            <a onClick={() => this.onDirectionClick("desc")}
+            <span onClick={() => this.onDirectionClick("desc")} 
                         className={sortDirection === "desc" ?
-                            styles.anchorClassActive : styles.anchorClass}>Desc</a>
+                            styles.anchorClassActive : styles.anchorClass}>Desc</span>
            
-           <a onClick={() => this.onDirectionClick("asc")}
+           <span onClick={() => this.onDirectionClick("asc")} 
                         className={sortDirection === "asc" ?
-                            styles.anchorClassActive : styles.anchorClass}>Asc</a>
+                            styles.anchorClassActive : styles.anchorClass}>Asc</span>
            
            
             </div>

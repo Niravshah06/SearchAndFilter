@@ -1076,28 +1076,6 @@ const job_data=[
         "country": "United States",
         "job_type": "Full-time",
         "job_title": "Automation Specialist IV"
-    },
-    {
-        "job_id": 99,
-        "job_desc": "ac nulla sed vel enim sit amet nunc viverra dapibus nulla",
-        "compnay_name": "Browsezoom",
-        "date": "9/20/2018",
-        "city": "Los Angeles",
-        "state": "California",
-        "country": "United States",
-        "job_type": "Part-time",
-        "job_title": "VP Product Management"
-    },
-    {
-        "job_id": 100,
-        "job_desc": "nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis",
-        "compnay_name": "InnoZ",
-        "date": "9/16/2018",
-        "city": "Minneapolis",
-        "state": "Minnesota",
-        "country": "United States",
-        "job_type": "Full-time",
-        "job_title": "Junior Executive"
     }
 ]
 

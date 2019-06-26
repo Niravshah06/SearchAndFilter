@@ -16,7 +16,7 @@ class FilterPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [], filters: [],
+            data: [], displayData:[],filters: [],
             activePage: 1,
             pageSize: 10,
             totalPages: 1,
@@ -65,6 +65,7 @@ class FilterPage extends React.Component {
     performKeyWordSearch(value) {
         //keyword search
         this.setState({ keyword: value });
+        this.populateDisplayData(this.state.data);
         // alert(value);
 
     }
@@ -108,9 +109,19 @@ class FilterPage extends React.Component {
         this.setState({
             data: job_data
         }, () => {
-            this.populateFilters()
+            this.populateFilters();
+            this.populateDisplayData(this.state.data);
         });
+    }
 
+    populateDisplayData(data)
+    {
+
+        let pageSize=this.state.pageSize;
+        let activePage=this.state.activePage;
+        let startIndex=(activePage-1)*pageSize;
+        let endIndex=startIndex+pageSize;
+        this.setState({ displayData: data.slice(startIndex,endIndex) });
 
     }
 
@@ -135,7 +146,7 @@ class FilterPage extends React.Component {
                     </div>
                     <div>
                         <SearchBar width={500} performSearchFromsubmit={this.performSearch} performSearch={this.performSearch} />
-                        <FilterResults data={this.state.data} />
+                        <FilterResults data={this.state.displayData} />
                     </div>
                 </div>
                 <PaginationFooter totalPages={this.state.totalPages} totalElements={this.state.totalElements} pageNumber={setPageNumber} pageSize={setPageSize} activePage={this.state.activePage} />

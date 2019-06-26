@@ -5,7 +5,7 @@ class FilterResults extends React.Component {
     render() {
         return (
             <div>
-                <ul>
+                <ol>
                    
                
 
@@ -15,7 +15,7 @@ class FilterResults extends React.Component {
                         
                     </li>)
                 })}
-                 </ul>
+                 </ol>
 
             </div>
         );

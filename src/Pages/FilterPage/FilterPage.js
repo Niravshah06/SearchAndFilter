@@ -2,12 +2,14 @@ import React from 'react';
 import styles from './styles.module.scss'
 import { job_data } from '../../api/filterPageAPIMock';
 import { SearchBar } from '../../Components/SearchBar';
+import {Sorting} from '../../Components/Sorting';
 import { FilterResults } from '../../Components/FilterResults';
 import { PaginationFooter } from '../../Components/PaginationFooter';
 import _ from "lodash";
 
 const filterFields = ["compnay_name", "city", "state", "country", "job_type"
 ]
+const sortingFields = ["Date","Title"];
 
 
 class FilterPage extends React.Component {
@@ -19,7 +21,6 @@ class FilterPage extends React.Component {
             pageSize: 10,
             totalPages: 1,
             totalElements: 0,
-            sortBy: 'testRunId',
             sortDirection: 'Desc',
             keyword: ''
 
@@ -37,7 +38,23 @@ class FilterPage extends React.Component {
         this.setPageSize = this.setPageSize.bind(this);
         this.setPageNumber = this.setPageNumber.bind(this);
 
+        this.sortResultsBy = this.sortResultsBy.bind(this);
+        this.orderResultsBy = this.orderResultsBy.bind(this);
 
+
+    }
+
+    //sort
+    sortResultsBy(value)
+    {
+        alert(value);
+
+    }
+
+    //order
+    orderResultsBy(value)
+    {
+        alert(value);
     }
 
 
@@ -111,6 +128,10 @@ class FilterPage extends React.Component {
                     <div className={styles.columnDivider}>
 
                         <h3>Search for Jobs</h3>
+                        <Sorting 
+                        orderBy={this.orderResultsBy}
+                        sortBy={this.sortResultsBy}
+                        sortingOptions={sortingFields} ></Sorting>
                     </div>
                     <div>
                         <SearchBar width={500} performSearchFromsubmit={this.performSearch} performSearch={this.performSearch} />

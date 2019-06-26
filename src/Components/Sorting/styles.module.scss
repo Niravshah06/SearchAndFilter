@@ -1,0 +1,12 @@
+.anchorClass
+{
+
+    margin: 10px;
+    cursor:pointer;
+
+}
+.anchorClassActive
+{
+    @extend .anchorClass;
+   color:blue;
+}

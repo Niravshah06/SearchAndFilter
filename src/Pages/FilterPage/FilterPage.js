@@ -2,28 +2,28 @@ import React from 'react';
 import styles from './styles.module.scss'
 import { job_data } from '../../api/filterPageAPIMock';
 import { SearchBar } from '../../Components/SearchBar';
-import {Sorting} from '../../Components/Sorting';
+import { Sorting } from '../../Components/Sorting';
 import { FilterResults } from '../../Components/FilterResults';
 import { PaginationFooter } from '../../Components/PaginationFooter';
 import _ from "lodash";
+import moment from 'moment';
+
 
 const filterFields = ["compnay_name", "city", "state", "country", "job_type"
 ]
-const sortingFields = ["Date","Title"];
+const sortingFields = ["date", "title"];
 
 
 class FilterPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            data: [], displayData:[],filters: [],
+            og_data: [], data: [], displayData: [], filters: [],
             activePage: 1,
             pageSize: 10,
             totalPages: 1,
             totalElements: 0,
-            sortDirection: 'Desc',
             keyword: ''
-
 
 
         }
@@ -39,23 +39,34 @@ class FilterPage extends React.Component {
         this.setPageNumber = this.setPageNumber.bind(this);
 
         this.sortResultsBy = this.sortResultsBy.bind(this);
-        this.orderResultsBy = this.orderResultsBy.bind(this);
 
 
     }
 
     //sort
-    sortResultsBy(value)
-    {
-        alert(value);
+    sortResultsBy(sortObj) {
+       
+        let data = []
+        if (sortObj['property'] === 'date') {
+            const Moment = require('moment')
+            data = _.orderBy(this.state.og_data, (a) => {
+                return new Moment(a.date).format('YYYYMMDD');
+            }, sortObj['direction']);
+
+        }
+        else {
+            data = _.orderBy(this.state.og_data, sortObj['property'], sortObj['direction']);
+        }
+        this.setState({ data: data });
+         //start from first page
+         this.setState({ activePage: 1 },()=>{
+        this.populateDisplayData(data)});
+
+
+
 
     }
 
-    //order
-    orderResultsBy(value)
-    {
-        alert(value);
-    }
 
 
     performSearch(value) {
@@ -102,30 +113,39 @@ class FilterPage extends React.Component {
             filters: filterToPopulate
         })
         this.setState({ totalElements: this.state.data.length });
-        this.setState({ totalPages: Math.floor(this.state.data.length / this.state.pageSize) });
+        this.setState({ totalPages: Math.floor(this.state.data.length / this.state.pageSize) + 1 });
 
     }
     getData() {
+        //intial values for sorting
+        let sortObj = [];
+        sortObj['property'] = 'date';
+        sortObj['direction'] = 'desc';
+
+        this.setState({ data: job_data });
         this.setState({
-            data: job_data
+            og_data: job_data
         }, () => {
             this.populateFilters();
-            this.populateDisplayData(this.state.data);
+            //do sorting
+            this.sortResultsBy(sortObj);
+
         });
     }
 
-    populateDisplayData(data)
-    {
+    populateDisplayData(data) {
 
-        let pageSize=this.state.pageSize;
-        let activePage=this.state.activePage;
-        let startIndex=(activePage-1)*pageSize;
-        let endIndex=startIndex+pageSize;
-        this.setState({ displayData: data.slice(startIndex,endIndex) });
+        let pageSize =Number( this.state.pageSize);
+        let activePage = this.state.activePage;
+        let startIndex = (activePage - 1) * pageSize;
+        let endIndex = startIndex + pageSize;
+        this.setState({ displayData: data.slice(startIndex, endIndex) });
 
     }
 
     componentWillMount() {
+
+        //get inital data
         this.getData();
     }
 
@@ -139,17 +159,17 @@ class FilterPage extends React.Component {
                     <div className={styles.columnDivider}>
 
                         <h3>Search for Jobs</h3>
-                        <Sorting 
-                        orderBy={this.orderResultsBy}
-                        sortBy={this.sortResultsBy}
-                        sortingOptions={sortingFields} ></Sorting>
+                        <Sorting
+                            sort={this.sortResultsBy}
+                            sortingOptions={sortingFields} ></Sorting>
                     </div>
                     <div>
                         <SearchBar width={500} performSearchFromsubmit={this.performSearch} performSearch={this.performSearch} />
                         <FilterResults data={this.state.displayData} />
                     </div>
                 </div>
-                <PaginationFooter totalPages={this.state.totalPages} totalElements={this.state.totalElements} pageNumber={setPageNumber} pageSize={setPageSize} activePage={this.state.activePage} />
+                <PaginationFooter totalPages={this.state.totalPages} totalElements={this.state.totalElements} pageNumber={setPageNumber}
+                    pageSize={setPageSize} activePage={this.state.activePage} />
 
             </div>
         );

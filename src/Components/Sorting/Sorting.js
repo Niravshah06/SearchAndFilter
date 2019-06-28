@@ -8,20 +8,25 @@ class Sorting extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            sortProperty: '',sortDirection:'desc'
+            sortProperty: 'date',sortDirection:'desc'
         }
     }
 
     onPropertyClick(value) {
+        let sortObj=[];
         this.setState({ sortProperty: value });
-       this.props.sortBy(value);
+        sortObj['property']=value;
+        sortObj['direction']=this.state.sortDirection;
+       this.props.sort(sortObj);
 
     }
 
     onDirectionClick(value) {
+        let sortObj=[];
         this.setState({ sortDirection: value });
-       this.props.orderBy(value);
-
+        sortObj['property']=this.state.sortProperty;
+        sortObj['direction']=value;
+       this.props.sort(sortObj);
     }
 
 
@@ -34,8 +39,8 @@ class Sorting extends React.Component {
             <div id="sortingDiv">
             <div id="sortingOptions">
             <span>Sort By :</span>
-                {this.props.sortingOptions.map(option => {
-                    return (<span onClick={() => this.onPropertyClick(option)} 
+                {this.props.sortingOptions.map((option,index) => {
+                    return (<span key={index} onClick={() => this.onPropertyClick(option)} 
                         className={sortProperty === option ?
                             styles.anchorClassActive : styles.anchorClass}>{option}</span>)
                 })
@@ -45,11 +50,11 @@ class Sorting extends React.Component {
             <span>Sort Direction :</span>
             <span onClick={() => this.onDirectionClick("desc")} 
                         className={sortDirection === "desc" ?
-                            styles.anchorClassActive : styles.anchorClass}>Desc</span>
+                            styles.anchorClassActive : styles.anchorClass}>desc</span>
            
            <span onClick={() => this.onDirectionClick("asc")} 
                         className={sortDirection === "asc" ?
-                            styles.anchorClassActive : styles.anchorClass}>Asc</span>
+                            styles.anchorClassActive : styles.anchorClass}>asc</span>
            
            
             </div>

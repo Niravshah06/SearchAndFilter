@@ -3,1079 +3,1079 @@ const job_data=[
         "job_id": 1,
         "job_desc": "euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula",
         "compnay_name": "Google",
-        "date": "3/5/2019",
+        "date": "2018-02-01",
         "city": "Yakima",
         "state": "Washington",
         "country": "India",
         "job_type": "Full-time",
-        "job_title": "Nurse"
+        "title": "Nurse"
     },
     {
         "job_id": 2,
         "job_desc": "diam neque vestibulum eget vulputate ut ultrices vel augue vestibulum ante ipsum primis in faucibus orci luctus et",
         "compnay_name": "Google",
-        "date": "10/18/2018",
+        "date": "2018-02-10",
         "city": "Arlington",
         "state": "Virginia",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Business Systems Development Analyst"
+        "title": "Business Systems Development Analyst"
     },
     {
         "job_id": 3,
         "job_desc": "amet lobortis sapien sapien non mi integer ac neque duis bibendum morbi non quam nec dui luctus rutrum nulla",
         "compnay_name": "Google",
-        "date": "7/16/2018",
+        "date": "2018-02-12",
         "city": "Jackson",
         "state": "Mississippi",
         "country": "India",
         "job_type": "Full-time",
-        "job_title": "Clinical Specialist"
+        "title": "Clinical Specialist"
     },
     {
         "job_id": 4,
         "job_desc": "quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus nec molestie sed justo pellentesque",
         "compnay_name": "Google",
-        "date": "6/11/2019",
+        "date": "2018-01-01",
         "city": "Houston",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Internal Auditor"
+        "title": "Internal Auditor"
     },
     {
         "job_id": 5,
         "job_desc": "quam a odio in hac habitasse platea dictumst maecenas ut",
         "compnay_name": "Google",
-        "date": "5/10/2019",
+        "date": "2018-08-01",
         "city": "Metairie",
         "state": "Louisiana",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Assistant Media Planner"
+        "title": "Assistant Media Planner"
     },
     {
         "job_id": 6,
         "job_desc": "porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
         "compnay_name": "Google",
-        "date": "11/15/2018",
+        "date": "2018-07-01",
         "city": "Philadelphia",
         "state": "Pennsylvania",
         "country": "India",
         "job_type": "Full-time",
-        "job_title": "Recruiter"
+        "title": "Recruiter"
     },
     {
         "job_id": 7,
         "job_desc": "id mauris vulputate elementum nullam varius nulla facilisi cras non velit nec nisi vulputate nonummy maecenas",
         "compnay_name": "Thoughtstorm",
-        "date": "12/1/2018",
+        "date": "2018-06-01",
         "city": "San Jose",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Chief Design Engineer"
+        "title": "Chief Design Engineer"
     },
     {
         "job_id": 8,
         "job_desc": "imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum",
         "compnay_name": "Google",
-        "date": "4/10/2019",
+        "date": "2018-03-01",
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Research Nurse"
+        "title": "Research Nurse"
     },
     {
         "job_id": 9,
         "job_desc": "suspendisse ornare consequat lectus in est risus auctor sed tristique",
         "compnay_name": "Google",
-        "date": "6/12/2019",
+        "date": "2018-08-01",
         "city": "Peoria",
         "state": "Illinois",
         "country": "United Kingdom",
         "job_type": "Part-time",
-        "job_title": "Project Manager"
+        "title": "Project Manager"
     },
     {
         "job_id": 10,
         "job_desc": "odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac",
         "compnay_name": "Google",
-        "date": "11/25/2018",
+        "date": "2018-02-21",
         "city": "Denver",
         "state": "Colorado",
         "country": "United Kingdom",
         "job_type": "Full-time",
-        "job_title": "Marketing Assistant"
+        "title": "Marketing Assistant"
     },
     {
         "job_id": 11,
         "job_desc": "adipiscing molestie hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec quis",
         "compnay_name": "Google",
-        "date": "4/18/2019",
+        "date": "2018-02-11",
         "city": "Clearwater",
         "state": "Florida",
         "country": "United Kingdom",
         "job_type": "Part-time",
-        "job_title": "Clinical Specialist"
+        "title": "Clinical Specialist"
     },
     {
         "job_id": 12,
         "job_desc": "pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac",
         "compnay_name": "Facebook",
-        "date": "10/7/2018",
+        "date": "2018-02-01",
         "city": "Pocatello",
         "state": "Idaho",
         "country": "United Kingdom",
         "job_type": "Full-time",
-        "job_title": "Recruiting Manager"
+        "title": "Recruiting Manager"
     },
     {
         "job_id": 13,
         "job_desc": "phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor id",
         "compnay_name": "Facebook",
-        "date": "1/13/2019",
+        "date": "2018-02-14",
         "city": "Cleveland",
         "state": "Ohio",
         "country": "Germany",
         "job_type": "Part-time",
-        "job_title": "Graphic Designer"
+        "title": "Graphic Designer"
     },
     {
         "job_id": 14,
         "job_desc": "dui luctus rutrum nulla tellus in sagittis dui vel nisl duis",
         "compnay_name": "Facebook",
-        "date": "7/24/2018",
+        "date": "2018-04-01",
         "city": "Orlando",
         "state": "Florida",
         "country": "Germany",
         "job_type": "Part-time",
-        "job_title": "Analog Circuit Design manager"
+        "title": "Analog Circuit Design manager"
     },
     {
         "job_id": 15,
         "job_desc": "ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient montes nascetur ridiculus mus",
         "compnay_name": "Mastercard",
-        "date": "7/25/2018",
+        "date": "2018-06-14",
         "city": "Greensboro",
         "state": "North Carolina",
         "country": "Germany",
         "job_type": "Full-time",
-        "job_title": "Developer IV"
+        "title": "Developer IV"
     },
     {
         "job_id": 16,
         "job_desc": "ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae duis faucibus accumsan odio curabitur convallis",
         "compnay_name": "Mastercard",
-        "date": "2/13/2019",
+        "date": "2018-08-08",
         "city": "Las Vegas",
         "state": "Nevada",
         "country": "Germany",
         "job_type": "Full-time",
-        "job_title": "Pharmacist"
+        "title": "Pharmacist"
     },
     {
         "job_id": 17,
         "job_desc": "aenean lectus pellentesque eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa volutpat convallis",
         "compnay_name": "Mastercard",
-        "date": "4/21/2019",
+        "date": "2018-08-09",
         "city": "Columbus",
         "state": "Ohio",
         "country": "Germany",
         "job_type": "Part-time",
-        "job_title": "Design Engineer"
+        "title": "Design Engineer"
     },
     {
         "job_id": 18,
         "job_desc": "posuere cubilia curae donec pharetra magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien sapien",
         "compnay_name": "Mastercard",
-        "date": "1/4/2019",
+        "date": "2018-01-04",
         "city": "Stamford",
         "state": "Connecticut",
         "country": "Canda",
         "job_type": "Part-time",
-        "job_title": "Environmental Tech"
+        "title": "Environmental Tech"
     },
     {
         "job_id": 19,
         "job_desc": "aliquet ultrices erat tortor sollicitudin mi sit amet lobortis sapien",
         "compnay_name": "Mastercard",
-        "date": "6/29/2018",
+        "date": "2018-01-15",
         "city": "Largo",
         "state": "Florida",
         "country": "Canda",
         "job_type": "Part-time",
-        "job_title": "Physical Therapy Assistant"
+        "title": "Physical Therapy Assistant"
     },
     {
         "job_id": 20,
         "job_desc": "pede libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in",
         "compnay_name": "Mastercard",
-        "date": "6/8/2019",
+        "date": "2018-01-11",
         "city": "Myrtle Beach",
         "state": "South Carolina",
         "country": "Canda",
         "job_type": "Part-time",
-        "job_title": "Engineer II"
+        "title": "Engineer II"
     },
     {
         "job_id": 21,
         "job_desc": "amet lobortis sapien sapien non mi integer ac neque duis",
         "compnay_name": "Facebook",
-        "date": "7/12/2018",
+        "date": "2018-09-21",
         "city": "Philadelphia",
         "state": "Pennsylvania",
         "country": "Canda",
         "job_type": "Part-time",
-        "job_title": "Budget/Accounting Analyst III"
+        "title": "Budget/Accounting Analyst III"
     },
     {
         "job_id": 22,
         "job_desc": "consequat nulla nisl nunc nisl duis bibendum felis sed interdum venenatis turpis enim blandit",
         "compnay_name": "Bloomberg",
-        "date": "10/24/2018",
+        "date": "2019-08-05",        
         "city": "Beaufort",
         "state": "South Carolina",
         "country": "Canda",
         "job_type": "Part-time",
-        "job_title": "Dental Hygienist"
+        "title": "Dental Hygienist"
     },
     {
         "job_id": 23,
         "job_desc": "ac nulla sed vel enim sit amet nunc viverra dapibus nulla",
         "compnay_name": "Google",
-        "date": "6/21/2019",
+        "date": "2019-08-23",
         "city": "Dallas",
         "state": "Texas",
         "country": "Canda",
         "job_type": "Full-time",
-        "job_title": "Research Nurse"
+        "title": "Research Nurse"
     },
     {
         "job_id": 24,
         "job_desc": "lectus suspendisse potenti in eleifend quam a odio in hac habitasse platea dictumst maecenas",
         "compnay_name": "Google",
-        "date": "5/1/2019",
+        "date": "2018-02-10",
         "city": "Boston",
         "state": "Massachusetts",
         "country": "Canda",
         "job_type": "Full-time",
-        "job_title": "Quality Engineer"
+        "title": "Quality Engineer"
     },
     {
         "job_id": 25,
         "job_desc": "amet nunc viverra dapibus nulla suscipit ligula in lacus curabitur at",
         "compnay_name": "Bloomberg",
-        "date": "9/27/2018",
+        "date": "2018-02-11",
         "city": "Norcross",
         "state": "Georgia",
         "country": "Canda",
         "job_type": "Full-time",
-        "job_title": "Biostatistician III"
+        "title": "Biostatistician III"
     },
     {
         "job_id": 26,
         "job_desc": "potenti cras in purus eu magna vulputate luctus cum sociis natoque penatibus et magnis dis parturient montes nascetur",
         "compnay_name": "Bloomberg",
-        "date": "3/15/2019",
+        "date": "2018-02-12",
         "city": "Garden Grove",
         "state": "California",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Accountant II"
+        "title": "Accountant II"
     },
     {
         "job_id": 27,
         "job_desc": "sapien a libero nam dui proin leo odio porttitor id consequat in consequat ut nulla sed",
         "compnay_name": "Bloomberg",
-        "date": "7/26/2018",
+        "date": "2018-02-13",
         "city": "Hampton",
         "state": "Virginia",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Accounting Assistant III"
+        "title": "Accounting Assistant III"
     },
     {
         "job_id": 28,
         "job_desc": "posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet",
         "compnay_name": "Bloomberg",
-        "date": "5/14/2019",
+        "date": "2018-02-14",
         "city": "Wilmington",
         "state": "Delaware",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Staff Accountant IV"
+        "title": "Staff Accountant IV"
     },
     {
         "job_id": 29,
         "job_desc": "proin leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor",
         "compnay_name": "Bloomberg",
-        "date": "11/24/2018",
+        "date": "2018-02-15",
         "city": "Sacramento",
         "state": "California",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Assistant Professor"
+        "title": "Assistant Professor"
     },
     {
         "job_id": 30,
         "job_desc": "luctus ultricies eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante",
         "compnay_name": "Bloomberg",
-        "date": "5/19/2019",
+        "date": "2018-02-16",
         "city": "Fort Worth",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Quality Engineer"
+        "title": "Quality Engineer"
     },
     {
         "job_id": 31,
         "job_desc": "primis in faucibus orci luctus et ultrices posuere cubilia curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus",
         "compnay_name": "Bloomberg",
-        "date": "9/9/2018",
+        "date": "2018-02-17",
         "city": "Des Moines",
         "state": "Iowa",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Media Manager I"
+        "title": "Media Manager I"
     },
     {
         "job_id": 32,
         "job_desc": "diam id ornare imperdiet sapien urna pretium nisl ut volutpat sapien arcu sed augue aliquam erat volutpat",
         "compnay_name": "Visa",
-        "date": "6/18/2019",
+        "date": "2018-02-18",
         "city": "East Saint Louis",
         "state": "Illinois",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Recruiter"
+        "title": "Recruiter"
     },
     {
         "job_id": 33,
         "job_desc": "at turpis a pede posuere nonummy integer non velit donec diam neque",
         "compnay_name": "Visa",
-        "date": "11/18/2018",
+        "date": "2018-02-18",
         "city": "Arlington",
         "state": "Virginia",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Database Administrator II"
+        "title": "Database Administrator II"
     },
     {
         "job_id": 34,
         "job_desc": "vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices",
         "compnay_name": "Visa",
-        "date": "7/29/2018",
+        "date": "2018-02-19",
         "city": "Birmingham",
         "state": "Alabama",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Software Consultant"
+        "title": "Software Consultant"
     },
     {
         "job_id": 35,
         "job_desc": "hendrerit at vulputate vitae nisl aenean lectus pellentesque eget nunc donec",
         "compnay_name": "Visa",
-        "date": "9/2/2018",
+        "date": "2018-02-19",
         "city": "Seattle",
         "state": "Washington",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Information Systems Manager"
+        "title": "Information Systems Manager"
     },
     {
         "job_id": 36,
         "job_desc": "dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus",
         "compnay_name": "Visa",
-        "date": "10/29/2018",
+        "date": "2018-02-20",
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Teacher"
+        "title": "Teacher"
     },
     {
         "job_id": 37,
         "job_desc": "non mauris morbi non lectus aliquam sit amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales",
         "compnay_name": "Visa",
-        "date": "3/27/2019",
+        "date": "2018-02-21",
         "city": "San Antonio",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Nurse"
+        "title": "Nurse"
     },
     {
         "job_id": 38,
         "job_desc": "cras pellentesque volutpat dui maecenas tristique est et tempus semper est quam pharetra magna ac consequat metus sapien ut",
         "compnay_name": "Visa",
-        "date": "6/2/2019",
+        "date": "2018-02-22",
         "city": "Fort Wayne",
         "state": "Indiana",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Paralegal"
+        "title": "Paralegal"
     },
     {
         "job_id": 39,
         "job_desc": "rutrum neque aenean auctor gravida sem praesent id massa id nisl",
         "compnay_name": "Visa",
-        "date": "11/2/2018",
+        "date": "2018-02-22",
         "city": "Miami Beach",
         "state": "Florida",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Chemical Engineer"
+        "title": "Chemical Engineer"
     },
     {
         "job_id": 40,
         "job_desc": "libero quis orci nullam molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus eu magna vulputate",
         "compnay_name": "Visa",
-        "date": "12/23/2018",
+        "date": "2018-02-24",
         "city": "Katy",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Quality Control Specialist"
+        "title": "Quality Control Specialist"
     },
     {
         "job_id": 41,
         "job_desc": "eu nibh quisque id justo sit amet sapien dignissim vestibulum vestibulum ante ipsum",
         "compnay_name": "Twitter",
-        "date": "7/29/2018",
+        "date": "2018-02-23",
         "city": "Arlington",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Data Coordiator"
+        "title": "Data Coordiator"
     },
     {
         "job_id": 42,
         "job_desc": "ut blandit non interdum in ante vestibulum ante ipsum primis in faucibus orci luctus et ultrices",
         "compnay_name": "Rhybox",
-        "date": "10/15/2018",
+        "date": "2018-02-23",
         "city": "Minneapolis",
         "state": "Minnesota",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Recruiter"
+        "title": "Recruiter"
     },
     {
         "job_id": 43,
         "job_desc": "leo odio porttitor id consequat in consequat ut nulla sed accumsan felis ut at dolor quis",
         "compnay_name": "Fivespan",
-        "date": "10/9/2018",
+        "date": "2018-02-25",
         "city": "Pompano Beach",
         "state": "Florida",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Staff Scientist"
+        "title": "Staff Scientist"
     },
     {
         "job_id": 44,
         "job_desc": "eget nunc donec quis orci eget orci vehicula condimentum curabitur in libero ut massa",
         "compnay_name": "Rhyzio",
-        "date": "3/14/2019",
+        "date": "2018-02-25",
         "city": "Jacksonville",
         "state": "Florida",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Clinical Specialist"
+        "title": "Clinical Specialist"
     },
     {
         "job_id": 45,
         "job_desc": "in porttitor pede justo eu massa donec dapibus duis at velit eu est congue elementum",
         "compnay_name": "Wordware",
-        "date": "3/29/2019",
+        "date": "2018-02-26",
         "city": "Oklahoma City",
         "state": "Oklahoma",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Marketing Assistant"
+        "title": "Marketing Assistant"
     },
     {
         "job_id": 46,
         "job_desc": "eu mi nulla ac enim in tempor turpis nec euismod scelerisque",
         "compnay_name": "Zooveo",
-        "date": "8/10/2018",
+        "date": "2018-02-07",
         "city": "Baton Rouge",
         "state": "Louisiana",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Financial Advisor"
+        "title": "Financial Advisor"
     },
     {
         "job_id": 47,
         "job_desc": "condimentum id luctus nec molestie sed justo pellentesque viverra pede",
         "compnay_name": "Rhynyx",
-        "date": "9/9/2018",
+        "date": "2018-02-19",
         "city": "Abilene",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Office Assistant III"
+        "title": "Office Assistant III"
     },
     {
         "job_id": 48,
         "job_desc": "blandit lacinia erat vestibulum sed magna at nunc commodo placerat praesent blandit nam nulla integer pede justo lacinia eget tincidunt",
         "compnay_name": "Shuffledrive",
-        "date": "6/19/2019",
+        "date": "2018-02-12",
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Account Coordinator"
+        "title": "Account Coordinator"
     },
     {
         "job_id": 49,
         "job_desc": "fermentum donec ut mauris eget massa tempor convallis nulla neque libero convallis",
         "compnay_name": "Leenti",
-        "date": "9/8/2018",
+        "date": "2018-02-17",
         "city": "Florence",
         "state": "South Carolina",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Safety Technician II"
+        "title": "Safety Technician II"
     },
     {
         "job_id": 50,
         "job_desc": "venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede",
         "compnay_name": "Tagchat",
-        "date": "1/23/2019",
+        "date": "2018-02-17",
         "city": "Fresno",
         "state": "California",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Speech Pathologist"
+        "title": "Speech Pathologist"
     },
     {
         "job_id": 51,
         "job_desc": "odio in hac habitasse platea dictumst maecenas ut massa quis augue luctus tincidunt",
         "compnay_name": "Ooba",
-        "date": "4/15/2019",
+        "date": "2018-02-20",
         "city": "Wichita Falls",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Project Manager"
+        "title": "Project Manager"
     },
     {
         "job_id": 52,
         "job_desc": "in hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut",
         "compnay_name": "Visa",
-        "date": "9/16/2018",
+        "date": "2018-02-21",
         "city": "Mobile",
         "state": "Alabama",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Structural Analysis Engineer"
+        "title": "Structural Analysis Engineer"
     },
     {
         "job_id": 53,
         "job_desc": "cras non velit nec nisi vulputate nonummy maecenas tincidunt lacus at velit vivamus vel",
         "compnay_name": "Mastercard",
-        "date": "9/5/2018",
+        "date": "2018-02-21",
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "VP Marketing"
+        "title": "VP Marketing"
     },
     {
         "job_id": 54,
         "job_desc": "vestibulum vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia curae nulla dapibus",
         "compnay_name": "Katz",
-        "date": "8/9/2018",
+        "date": "2018-02-11",
         "city": "Santa Rosa",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Human Resources Manager"
+        "title": "Human Resources Manager"
     },
     {
         "job_id": 55,
         "job_desc": "dolor vel est donec odio justo sollicitudin ut suscipit a feugiat et eros vestibulum ac est",
         "compnay_name": "Yodoo",
-        "date": "1/11/2019",
+        "date": "2018-03-01",
         "city": "Jackson",
         "state": "Mississippi",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Developer II"
+        "title": "Developer II"
     },
     {
         "job_id": 56,
         "job_desc": "amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor",
         "compnay_name": "Jayo",
-        "date": "8/27/2018",
+        "date": "2018-03-11",
         "city": "Arlington",
         "state": "Virginia",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Automation Specialist I"
+        "title": "Automation Specialist I"
     },
     {
         "job_id": 57,
         "job_desc": "hac habitasse platea dictumst etiam faucibus cursus urna ut tellus nulla ut erat id",
         "compnay_name": "Latz",
-        "date": "9/1/2018",
+        "date": "2018-03-02",
         "city": "Austin",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Research Nurse"
+        "title": "Research Nurse"
     },
     {
         "job_id": 58,
         "job_desc": "sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet eleifend pede libero quis orci nullam",
         "compnay_name": "Dablist",
-        "date": "4/13/2019",
+        "date": "2018-03-09",
         "city": "Danbury",
         "state": "Connecticut",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Executive Secretary"
+        "title": "Executive Secretary"
     },
     {
         "job_id": 59,
         "job_desc": "vestibulum velit id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat",
         "compnay_name": "Twinte",
-        "date": "11/2/2018",
+        "date": "2018-03-06",
         "city": "Inglewood",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Executive Secretary"
+        "title": "Executive Secretary"
     },
     {
         "job_id": 60,
         "job_desc": "id pretium iaculis diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam",
         "compnay_name": "DabZ",
-        "date": "11/14/2018",
+        "date": "2018-04-05",
         "city": "Wichita Falls",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Operator"
+        "title": "Operator"
     },
     {
         "job_id": 61,
         "job_desc": "nulla nunc purus phasellus in felis donec semper sapien a libero nam dui proin leo odio",
         "compnay_name": "Wikizz",
-        "date": "6/12/2019",
+        "date": "2018-04-04",
         "city": "Winston Salem",
         "state": "North Carolina",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Database Administrator III"
+        "title": "Database Administrator III"
     },
     {
         "job_id": 62,
         "job_desc": "luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur gravida",
         "compnay_name": "Twitter",
-        "date": "2/2/2019",
+        "date": "2018-06-06",
         "city": "Bakersfield",
         "state": "California",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Structural Engineer"
+        "title": "Structural Engineer"
     },
     {
         "job_id": 63,
         "job_desc": "magnis dis parturient montes nascetur ridiculus mus etiam vel augue vestibulum rutrum rutrum neque aenean auctor",
         "compnay_name": "Google",
-        "date": "5/18/2019",
+        "date": "2018-05-05",
         "city": "Rochester",
         "state": "New York",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Biostatistician I"
+        "title": "Biostatistician I"
     },
     {
         "job_id": 64,
         "job_desc": "amet diam in magna bibendum imperdiet nullam orci pede venenatis non sodales sed tincidunt eu felis fusce",
         "compnay_name": "Blogspan",
-        "date": "6/15/2019",
+        "date": "2018-07-07",
         "city": "Spartanburg",
         "state": "South Carolina",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Social Worker"
+        "title": "Social Worker"
     },
     {
         "job_id": 65,
         "job_desc": "scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus tortor duis mattis egestas metus",
         "compnay_name": "Meetz",
-        "date": "4/18/2019",
+        "date": "2018-08-08",
         "city": "New York City",
         "state": "New York",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Accounting Assistant II"
+        "title": "Accounting Assistant II"
     },
     {
         "job_id": 66,
         "job_desc": "sed augue aliquam erat volutpat in congue etiam justo etiam",
         "compnay_name": "Youtags",
-        "date": "2/23/2019",
+        "date": "2018-06-08",
         "city": "Kansas City",
         "state": "Kansas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Programmer I"
+        "title": "Programmer I"
     },
     {
         "job_id": 67,
         "job_desc": "justo nec condimentum neque sapien placerat ante nulla justo aliquam quis turpis eget elit sodales scelerisque mauris sit",
         "compnay_name": "Babbleset",
-        "date": "1/18/2019",
+        "date": "2018-09-09",
         "city": "Battle Creek",
         "state": "Michigan",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Software Consultant"
+        "title": "Software Consultant"
     },
     {
         "job_id": 68,
         "job_desc": "ac enim in tempor turpis nec euismod scelerisque quam turpis adipiscing lorem vitae mattis nibh ligula nec sem duis",
         "compnay_name": "Twitter",
-        "date": "7/13/2018",
+        "date": "2018-10-01",
         "city": "New Orleans",
         "state": "Louisiana",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Internal Auditor"
+        "title": "Internal Auditor"
     },
     {
         "job_id": 69,
         "job_desc": "nisl venenatis lacinia aenean sit amet justo morbi ut odio cras mi pede Part-timesuada in imperdiet et",
         "compnay_name": "Twitter",
-        "date": "4/25/2019",
+        "date": "2018-10-11",
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Help Desk Operator"
+        "title": "Help Desk Operator"
     },
     {
         "job_id": 70,
         "job_desc": "at dolor quis odio consequat varius integer ac leo pellentesque ultrices mattis odio donec vitae nisi nam",
         "compnay_name": "Twitter",
-        "date": "10/21/2018",
+        "date": "2018-10-12",
         "city": "Corpus Christi",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Web Developer II"
+        "title": "Web Developer II"
     },
     {
         "job_id": 71,
         "job_desc": "odio cras mi pede Part-timesuada in imperdiet et commodo vulputate justo in blandit ultrices enim lorem ipsum dolor sit amet",
         "compnay_name": "Twitter",
-        "date": "2/5/2019",
+        "date": "2018-11-12",
         "city": "Norwalk",
         "state": "Connecticut",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Tax Accountant"
+        "title": "Tax Accountant"
     },
     {
         "job_id": 72,
         "job_desc": "magna vestibulum aliquet ultrices erat tortor sollicitudin mi sit amet lobortis",
         "compnay_name": "Twitter",
-        "date": "12/18/2018",
+        "date": "2018-12-22",
         "city": "Wilkes Barre",
         "state": "Pennsylvania",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Physical Therapy Assistant"
+        "title": "Physical Therapy Assistant"
     },
     {
         "job_id": 73,
         "job_desc": "faucibus cursus urna ut tellus nulla ut erat id mauris vulputate elementum nullam varius nulla facilisi cras",
         "compnay_name": "Youbridge",
-        "date": "9/5/2018",
+        "date": "2018-12-12",
         "city": "Greeley",
         "state": "Colorado",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Desktop Support Technician"
+        "title": "Desktop Support Technician"
     },
     {
         "job_id": 74,
         "job_desc": "tristique est et tempus semper est quam pharetra magna ac consequat metus sapien",
         "compnay_name": "Twitter",
-        "date": "11/7/2018",
+        "date": "2018-12-16",
         "city": "Brooklyn",
         "state": "New York",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Junior Executive"
+        "title": "Junior Executive"
     },
     {
         "job_id": 75,
         "job_desc": "eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi",
         "compnay_name": "Google",
-        "date": "11/22/2018",
+        "date": "2018-12-19",
         "city": "Hayward",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Project Manager"
+        "title": "Project Manager"
     },
     {
         "job_id": 76,
         "job_desc": "purus phasellus in felis donec semper sapien a libero nam dui proin leo odio porttitor",
         "compnay_name": "Twitter",
-        "date": "8/18/2018",
+        "date": "2018-11-25",
         "city": "Fort Worth",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Chemical Engineer"
+        "title": "Chemical Engineer"
     },
     {
         "job_id": 77,
         "job_desc": "diam erat fermentum justo nec condimentum neque sapien placerat ante nulla justo aliquam quis",
         "compnay_name": "Twitter",
-        "date": "10/12/2018",
+        "date": "2018-11-22",
         "city": "Flint",
         "state": "Michigan",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Senior Financial Analyst"
+        "title": "Senior Financial Analyst"
     },
     {
         "job_id": 78,
         "job_desc": "erat id mauris vulputate elementum nullam varius nulla facilisi cras",
         "compnay_name": "Twitter",
-        "date": "5/12/2019",
+        "date": "2018-11-20",
         "city": "Dallas",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Software Test Engineer IV"
+        "title": "Software Test Engineer IV"
     },
     {
         "job_id": 79,
         "job_desc": "ut massa quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat curabitur",
         "compnay_name": "Jaxspan",
-        "date": "7/25/2018",
+        "date": "2018-11-19",
         "city": "Fullerton",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Biostatistician IV"
+        "title": "Biostatistician IV"
     },
     {
         "job_id": 80,
         "job_desc": "quis augue luctus tincidunt nulla mollis molestie lorem quisque ut erat",
         "compnay_name": "Twitterlist",
-        "date": "7/17/2018",
+        "date": "2018-10-11",
         "city": "Trenton",
         "state": "New Jersey",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Structural Analysis Engineer"
+        "title": "Structural Analysis Engineer"
     },
     {
         "job_id": 81,
         "job_desc": "aliquam lacus morbi quis tortor id nulla ultrices aliquet maecenas leo odio condimentum id luctus",
         "compnay_name": "Vipe",
-        "date": "9/23/2018",
+        "date": "2018-11-19",
         "city": "Lexington",
         "state": "Kentucky",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Systems Administrator III"
+        "title": "Systems Administrator III"
     },
     {
         "job_id": 82,
         "job_desc": "justo in blandit ultrices enim lorem ipsum dolor sit amet consectetuer adipiscing elit proin interdum",
         "compnay_name": "Skilith",
-        "date": "4/20/2019",
+        "date": "2018-10-27",
         "city": "Miami",
         "state": "Florida",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Senior Cost Accountant"
+        "title": "Senior Cost Accountant"
     },
     {
         "job_id": 83,
         "job_desc": "non sodales sed tincidunt eu felis fusce posuere felis sed",
         "compnay_name": "Quatz",
-        "date": "10/22/2018",
+        "date": "2018-10-13",
         "city": "Irving",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Analog Circuit Design manager"
+        "title": "Analog Circuit Design manager"
     },
     {
         "job_id": 84,
         "job_desc": "eu massa donec dapibus duis at velit eu est congue elementum in hac habitasse platea dictumst morbi",
         "compnay_name": "Bubbletube",
-        "date": "2/3/2019",
+        "date": "2018-10-12",
         "city": "Portland",
         "state": "Oregon",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Biostatistician IV"
+        "title": "Biostatistician IV"
     },
     {
         "job_id": 85,
         "job_desc": "sollicitudin ut suscipit a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce",
         "compnay_name": "Visa",
-        "date": "2/3/2019",
+        "date": "2018-10-04",
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Structural Engineer"
+        "title": "Structural Engineer"
     },
     {
         "job_id": 86,
         "job_desc": "leo maecenas pulvinar lobortis est phasellus sit amet erat nulla tempus vivamus in",
         "compnay_name": "Aivee",
-        "date": "5/27/2019",
+        "date": "2018-10-02",
         "city": "El Paso",
         "state": "Texas",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Automation Specialist I"
+        "title": "Automation Specialist I"
     },
     {
         "job_id": 87,
         "job_desc": "molestie nibh in lectus pellentesque at nulla suspendisse potenti cras in purus",
         "compnay_name": "Bloomberg",
-        "date": "11/3/2018",
+        "date": "2018-12-22",
         "city": "Houston",
         "state": "Texas",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Mechanical Systems Engineer"
+        "title": "Mechanical Systems Engineer"
     },
     {
         "job_id": 88,
         "job_desc": "a suscipit nulla elit ac nulla sed vel enim sit amet nunc viverra dapibus nulla suscipit ligula in",
         "compnay_name": "Snaptags",
-        "date": "3/30/2019",
+        "date": "2018-02-06",
         "city": "Van Nuys",
         "state": "California",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Clinical Specialist"
+        "title": "Clinical Specialist"
     },
     {
         "job_id": 89,
         "job_desc": "et magnis dis parturient montes nascetur ridiculus mus vivamus vestibulum sagittis sapien cum sociis natoque penatibus et magnis dis parturient",
         "compnay_name": "Meedoo",
-        "date": "2/7/2019",
+        "date": "2019-02-04",
         "city": "Boston",
         "state": "Massachusetts",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Librarian"
+        "title": "Librarian"
     },
     {
         "job_id": 90,
         "job_desc": "a feugiat et eros vestibulum ac est lacinia nisi venenatis tristique fusce congue diam id ornare imperdiet",
         "compnay_name": "Oodoo",
-        "date": "11/15/2018",
+        "date": "2019-02-10",
         "city": "Chula Vista",
         "state": "California",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "VP Quality Control"
+        "title": "VP Quality Control"
     },
     {
         "job_id": 91,
         "job_desc": "sem sed sagittis nam congue risus semper porta volutpat quam pede lobortis ligula sit amet",
         "compnay_name": "Plambee",
-        "date": "8/26/2018",
+        "date": "2019-02-19",
         "city": "Newport News",
         "state": "Virginia",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Operator"
+        "title": "Operator"
     },
     {
         "job_id": 92,
         "job_desc": "turpis donec posuere metus vitae ipsum aliquam non mauris morbi non lectus aliquam sit amet diam",
         "compnay_name": "Eabox",
-        "date": "8/29/2018",
+        "date": "2019-06-01",
         "city": "Mesa",
         "state": "Arizona",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Nurse"
+        "title": "Nurse"
     },
     {
         "job_id": 93,
         "job_desc": "quis turpis eget elit sodales scelerisque mauris sit amet eros suspendisse accumsan tortor quis turpis sed ante vivamus",
         "compnay_name": "Jabberbean",
-        "date": "5/11/2019",
+        "date": "2019-08-01",
         "city": "San Diego",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Software Engineer II"
+        "title": "Software Engineer II"
     },
     {
         "job_id": 94,
         "job_desc": "felis eu sapien cursus vestibulum proin eu mi nulla ac enim in tempor turpis nec euismod scelerisque quam turpis",
         "compnay_name": "Centimia",
-        "date": "4/13/2019",
+        "date": "2019-04-01",
         "city": "Evansville",
         "state": "Indiana",
         "country": "United States",
         "job_type": "Part-time",
-        "job_title": "Quality Engineer"
+        "title": "Quality Engineer"
     },
     {
         "job_id": 95,
         "job_desc": "ligula pellentesque ultrices phasellus id sapien in sapien iaculis congue vivamus metus arcu",
         "compnay_name": "Miboo",
-        "date": "9/26/2018",
+        "date": "2019-03-01",
         "city": "Baltimore",
         "state": "Maryland",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Actuary"
+        "title": "Actuary"
     },
     {
         "job_id": 96,
         "job_desc": "etiam vel augue vestibulum rutrum rutrum neque aenean auctor gravida sem praesent id massa id nisl venenatis lacinia aenean sit",
         "compnay_name": "Zoomzone",
-        "date": "4/8/2019",
+        "date": "2019-07-01",
         "city": "Philadelphia",
         "state": "Pennsylvania",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Speech Pathologist"
+        "title": "Speech Pathologist"
     },
     {
         "job_id": 97,
         "job_desc": "curae mauris viverra diam vitae quam suspendisse potenti nullam porttitor lacus at turpis donec",
         "compnay_name": "Linktype",
-        "date": "7/4/2018",
+        "date": "2019-09-01",
         "city": "Paterson",
         "state": "New Jersey",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Librarian"
+        "title": "Librarian"
     },
     {
         "job_id": 98,
         "job_desc": "augue quam sollicitudin vitae consectetuer eget rutrum at lorem integer tincidunt ante vel ipsum",
         "compnay_name": "Visa",
-        "date": "3/18/2019",
+        "date": "2019-12-01",
         "city": "Oakland",
         "state": "California",
         "country": "United States",
         "job_type": "Full-time",
-        "job_title": "Automation Specialist IV"
+        "title": "Automation Specialist IV"
     }
 ]
 

@@ -39,7 +39,7 @@ class PaginationFooter extends React.Component {
           </select>
         </div>
         <div>
-          <Pagination innerClass={styles.UL} itemClass={styles.LI}
+          <Pagination innerClass={styles.UL} itemClass={styles.LI} activeLinkClass={styles.activeLI}
             activePage={this.props.activePage}
             itemsCountPerPage={this.state.pageSize}
             totalItemsCount={this.props.totalElements}

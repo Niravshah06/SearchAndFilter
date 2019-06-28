@@ -5,17 +5,17 @@ class FilterResults extends React.Component {
     render() {
         return (
             <div>
-                <ol>
+                <ul>
                    
                
 
                 {this.props.data && this.props.data.map(job => {
-                    return (<li>
-                            {job.job_title}
+                    return (<li style={{display: 'table'}} key={job.job_id}>
+                           {job.date} {job.title}   {job.job_id}
                         
                     </li>)
                 })}
-                 </ol>
+                 </ul>
 
             </div>
         );

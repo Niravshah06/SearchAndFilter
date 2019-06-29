@@ -6,7 +6,6 @@ import { Sorting } from '../../Components/Sorting';
 import { FilterResults } from '../../Components/FilterResults';
 import { PaginationFooter } from '../../Components/PaginationFooter';
 import _ from "lodash";
-import moment from 'moment';
 
 
 const filterFields = ["compnay_name", "city", "state", "country", "job_type"
@@ -23,7 +22,8 @@ class FilterPage extends React.Component {
             pageSize: 10,
             totalPages: 1,
             totalElements: 0,
-            keyword: ''
+            keyword: '',
+            sortObj: []
 
 
         }
@@ -37,34 +37,35 @@ class FilterPage extends React.Component {
 
         this.setPageSize = this.setPageSize.bind(this);
         this.setPageNumber = this.setPageNumber.bind(this);
+        this.updatePagingAttributes = this.updatePagingAttributes.bind(this);
+
 
         this.sortResultsBy = this.sortResultsBy.bind(this);
+
 
 
     }
 
     //sort
     sortResultsBy(sortObj) {
-       
+        this.setState({ sortObj: sortObj });
         let data = []
         if (sortObj['property'] === 'date') {
             const Moment = require('moment')
-            data = _.orderBy(this.state.og_data, (a) => {
+            data = _.orderBy(this.state.data, (a) => {
                 return new Moment(a.date).format('YYYYMMDD');
             }, sortObj['direction']);
 
         }
         else {
-            data = _.orderBy(this.state.og_data, sortObj['property'], sortObj['direction']);
+            data = _.orderBy(this.state.data, sortObj['property'], sortObj['direction']);
         }
         this.setState({ data: data });
-         //start from first page
-         this.setState({ activePage: 1 },()=>{
-        this.populateDisplayData(data)});
+        //start from first page
+        this.setState({ activePage: 1 }, () => {
+            this.populateDisplayData(data);
 
-
-
-
+        });
     }
 
 
@@ -74,11 +75,31 @@ class FilterPage extends React.Component {
         console.log(value);
     }
     performKeyWordSearch(value) {
-        //keyword search
+        value = value.toLowerCase();
         this.setState({ keyword: value });
-        this.populateDisplayData(this.state.data);
-        // alert(value);
+        //if value is empty use og data
+        let data = this.state.og_data;
+        if (value && value !== '') {
+            //keyword search
 
+            data = _.filter(this.state.og_data, function (item) {
+                return item.title.toLowerCase().indexOf(value) > -1;
+            });
+        }
+        //check if data after filter if used is >0
+            if (data.length > 0) {
+                this.setState({ data: data });
+                this.setState({ activePage: 1 }, () => {
+                    this.populateDisplayData(data);
+                    this.sortResultsBy(this.state.sortObj);
+                    this.updatePagingAttributes();
+                });
+            }
+            else
+                alert("no matching result found!,please update searching crieteria");
+        
+       
+    
     }
 
     //paging methods
@@ -86,13 +107,13 @@ class FilterPage extends React.Component {
     setPageSize(pageSize) {
         this.setState({ activePage: 1 });
         this.setState({ pageSize: pageSize }, () => {
-            this.performKeyWordSearch()
+            this.populateDisplayData(this.state.data);
         });
 
     }
     setPageNumber(pageNumber) {
         this.setState({ activePage: pageNumber }, () => {
-            this.performKeyWordSearch()
+            this.populateDisplayData(this.state.data);
         });
     }
 
@@ -112,6 +133,11 @@ class FilterPage extends React.Component {
         this.setState({
             filters: filterToPopulate
         })
+        this.updatePagingAttributes();
+
+    }
+
+    updatePagingAttributes() {
         this.setState({ totalElements: this.state.data.length });
         this.setState({ totalPages: Math.floor(this.state.data.length / this.state.pageSize) + 1 });
 
@@ -135,7 +161,7 @@ class FilterPage extends React.Component {
 
     populateDisplayData(data) {
 
-        let pageSize =Number( this.state.pageSize);
+        let pageSize = Number(this.state.pageSize);
         let activePage = this.state.activePage;
         let startIndex = (activePage - 1) * pageSize;
         let endIndex = startIndex + pageSize;
@@ -164,7 +190,7 @@ class FilterPage extends React.Component {
                             sortingOptions={sortingFields} ></Sorting>
                     </div>
                     <div>
-                        <SearchBar width={500} performSearchFromsubmit={this.performSearch} performSearch={this.performSearch} />
+                        <SearchBar width={500} performSearchFromsubmit={this.performKeyWordSearch} performSearch={this.performSearch} />
                         <FilterResults data={this.state.displayData} />
                     </div>
                 </div>

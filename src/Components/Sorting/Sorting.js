@@ -37,7 +37,7 @@ class Sorting extends React.Component {
 
         return (
             <div id="sortingDiv">
-            <div id="sortingOptions">
+            <div id="sortingOptions" className={styles.border}>
             <span>Sort By :</span>
                 {this.props.sortingOptions.map((option,index) => {
                     return (<span key={index} onClick={() => this.onPropertyClick(option)} 
@@ -46,7 +46,7 @@ class Sorting extends React.Component {
                 })
                 }
             </div>
-            <div id="orderingOption">
+            <div id="orderingOption" className={styles.border}>
             <span>Sort Direction :</span>
             <span onClick={() => this.onDirectionClick("desc")} 
                         className={sortDirection === "desc" ?

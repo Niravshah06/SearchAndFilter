@@ -1,21 +1,19 @@
 import React from 'react';
+import { FilterRow } from '../../Components/FilterRow';
+
+
+
 
 class FilterResults extends React.Component {
 
     render() {
         return (
             <div>
-                <ul>
-                   
-               
-
                 {this.props.data && this.props.data.map(job => {
-                    return (<li style={{display: 'table'}} key={job.job_id}>
-                           {job.date} {job.title}   {job.job_id}
-                        
-                    </li>)
+                    return (
+                        <FilterRow data={job} />
+                    )
                 })}
-                 </ul>
 
             </div>
         );

@@ -5,13 +5,21 @@ class FilterRow extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            expaneded: false,
+            expaneded: false,role:'show'
         };
         this.handleClick = this.handleClick.bind(this);
 
     }
 
     handleClick() {
+        let role="hide";
+        if(this.state.expaneded)
+        {
+          role="show"
+        }
+        this.setState({
+            role: role
+        })
         this.setState({
             expaneded: !this.state.expaneded
         })
@@ -30,17 +38,10 @@ class FilterRow extends React.Component {
                     <span>{job.title}  |  </span>
                     <span> {job.compnay_name}  |  </span>
                     <span>{job.date} |  </span>
-                    <span>
-
-                        <a role="button">
-                            expand
+                    <span>   {this.state.role}
               <i onClick={this.handleClick}
-                                className={this.state.active ? "fa fa-chevron-up" : "fa fa-chevron-down"}
-                                aria-hidden="true"></i>
-
-
-                        </a>
-
+                            className={this.state.expaneded ? "fa fa-chevron-up" : "fa fa-chevron-down"}
+                            aria-hidden="true"></i>
                     </span>
                 </div>
                 <div>

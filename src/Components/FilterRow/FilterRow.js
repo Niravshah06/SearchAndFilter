@@ -5,17 +5,24 @@ class FilterRow extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            expaneded: false,role:'show'
+            expaneded: false, role: 'show'
         };
+        this.baseState = this.state;
         this.handleClick = this.handleClick.bind(this);
 
     }
+    componentWillReceiveProps() {
+        this.setState(this.baseState)
 
-    handleClick() {
-        let role="hide";
-        if(this.state.expaneded)
-        {
-          role="show"
+    }
+   
+
+
+    handleClick(event) {
+        event.preventDefault();
+        let role = "hide";
+        if (this.state.expaneded) {
+            role = "show"
         }
         this.setState({
             role: role
@@ -34,14 +41,14 @@ class FilterRow extends React.Component {
                 marginTop: '10px', background: 'whitesmoke'
             }}>
                 <div>
-                    <img class={styles.imgClass} alt="logo" src={imgSource} />
+                    <img className={styles.imgClass} alt="logo" src={imgSource} />
                     <span>{job.title}  |  </span>
                     <span> {job.compnay_name}  |  </span>
                     <span>{job.date} |  </span>
                     <span>   {this.state.role}
-              <i onClick={this.handleClick}
+                        <i onClick={this.handleClick}
                             className={this.state.expaneded ? "fa fa-chevron-up" : "fa fa-chevron-down"}
-                            aria-hidden="true"></i>
+                            ></i>
                     </span>
                 </div>
                 <div>

@@ -9,9 +9,9 @@ class FilterResults extends React.Component {
     render() {
         return (
             <div>
-                {this.props.data && this.props.data.map(job => {
+                {this.props.data && this.props.data.map((job,index)=> {
                     return (
-                        <FilterRow data={job} />
+                        <FilterRow  key={index} data={job} />
                     )
                 })}
 

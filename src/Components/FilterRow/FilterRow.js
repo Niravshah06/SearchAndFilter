@@ -11,11 +11,7 @@ class FilterRow extends React.Component {
         this.handleClick = this.handleClick.bind(this);
 
     }
-    componentWillReceiveProps() {
-        this.setState(this.baseState)
-
-    }
-   
+    
 
 
     handleClick(event) {

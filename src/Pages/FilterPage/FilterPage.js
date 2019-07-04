@@ -5,13 +5,23 @@ import { SearchBar } from '../../Components/SearchBar';
 import { Sorting } from '../../Components/Sorting';
 import { FilterResults } from '../../Components/FilterResults';
 import { PaginationFooter } from '../../Components/PaginationFooter';
+import { Filter } from '../../Components/Filter'
 import _ from "lodash";
 
 
-const filterFields = ["compnay_name", "city", "state", "country", "job_type"
-]
+const filterFields = ["country", "job_type"]
 const sortingFields = ["date", "title"];
-
+/*
+var predicate = function() {
+    var args = _.toArray(arguments[checkboxes]);
+    
+    return function() {
+      var equals = _.partial(_.isEqual, arguments[name]);
+      
+      return args.some(equals);
+    }
+  }
+  */
 
 class FilterPage extends React.Component {
     constructor(props) {
@@ -30,6 +40,8 @@ class FilterPage extends React.Component {
         this.getData = this.getData.bind(this);
 
         this.populateFilters = this.populateFilters.bind(this);
+        this.applyFilters = this.applyFilters.bind(this);
+
 
         this.performSearch = this.performSearch.bind(this);
         this.performKeyWordSearch = this.performKeyWordSearch.bind(this);
@@ -41,9 +53,6 @@ class FilterPage extends React.Component {
 
 
         this.sortResultsBy = this.sortResultsBy.bind(this);
-
-
-
     }
 
     //sort
@@ -68,7 +77,7 @@ class FilterPage extends React.Component {
         });
     }
 
-
+    /////search bar methods
 
     performSearch(value) {
         //do nothing ,this is value for event chaange after every press,we filter only when thet hit enter
@@ -87,19 +96,19 @@ class FilterPage extends React.Component {
             });
         }
         //check if data after filter if used is >0
-            if (data.length > 0) {
-                this.setState({ data: data });
-                this.setState({ activePage: 1 }, () => {
-                    this.populateDisplayData(data);
-                    this.sortResultsBy(this.state.sortObj);
-                    this.updatePagingAttributes();
-                });
-            }
-            else
-                alert("no matching result found!,please update searching crieteria");
-        
-       
-    
+        if (data.length > 0) {
+            this.setState({ data: data });
+            this.setState({ activePage: 1 }, () => {
+                this.populateDisplayData(data);
+                this.sortResultsBy(this.state.sortObj);
+                this.updatePagingAttributes();
+            });
+        }
+        else
+            alert("no matching result found!,please update searching crieteria");
+
+
+
     }
 
     //paging methods
@@ -117,31 +126,63 @@ class FilterPage extends React.Component {
         });
     }
 
-    populateFilters() {
-        console.log(_.uniqBy(this.state.data, 'country').length);
-        let data = this.state.data;
-        let filterToPopulate = [];
-        filterFields.forEach(function (key) {
-
-            let result = [...new Set(data.map(item => item[key]))];
-            if (result.length > 0) {
-                filterToPopulate[key] = result;
-            }
-
-
-        })
-        this.setState({
-            filters: filterToPopulate
-        })
-        this.updatePagingAttributes();
-
-    }
-
     updatePagingAttributes() {
         this.setState({ totalElements: this.state.data.length });
         this.setState({ totalPages: Math.floor(this.state.data.length / this.state.pageSize) + 1 });
 
     }
+
+    //filter checkbox methods
+
+    applyFilters(filter) {
+        const filterName = filter.name;
+        const checkboxes = filter.checkboxes;
+        const filterValues = [];
+        let data = this.state.og_data;
+        if (filter && filterName && checkboxes) {
+            Object.keys(checkboxes).forEach((key) => {
+                if (checkboxes[key]) {
+                    filterValues.push(key);
+                }
+            })
+        }
+        if (filterValues.length > 0) {
+            data = _.filter(data, function (item) {
+                return filterValues.includes(item[filterName]);
+            });
+
+            this.setState({ data: data });
+            this.setState({ activePage: 1 }, () => {
+                this.populateDisplayData(data);
+                this.sortResultsBy(this.state.sortObj);
+                this.updatePagingAttributes();
+            });
+        }
+    }
+
+    //populate filter based on data dynamically
+    populateFilters() {
+        // console.log(_.uniqBy(this.state.data, 'country').length);
+        let data = this.state.data;
+        let filterToPopulate = [];
+        filterFields.forEach(function (key) {
+
+            let result = [...new Set(data.map(item => item[key]))];
+            filterToPopulate.push({
+                name: key,
+                options: result
+            });
+
+        })
+        this.setState({
+            filters: filterToPopulate
+        }, () => {
+            this.updatePagingAttributes();
+        });
+
+    }
+
+
     getData() {
         //intial values for sorting
         let sortObj = [];
@@ -176,6 +217,7 @@ class FilterPage extends React.Component {
     }
 
     render() {
+
         var setPageSize = this.setPageSize.bind(this);
         var setPageNumber = this.setPageNumber.bind(this);
         return (
@@ -188,6 +230,7 @@ class FilterPage extends React.Component {
                         <Sorting
                             sort={this.sortResultsBy}
                             sortingOptions={sortingFields} ></Sorting>
+                        <Filter filters={this.state.filters} onFilterChange={this.applyFilters} />
                     </div>
                     <div>
                         <SearchBar width={500} performSearchFromsubmit={this.performKeyWordSearch} performSearch={this.performSearch} />

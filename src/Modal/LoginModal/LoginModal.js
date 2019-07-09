@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import Modal from 'react-modal';
 import styles from './styles.module.scss'
 
-Modal.setAppElement('#root')
 class LoginModal extends Component {
 
     constructor(props) {
@@ -24,7 +23,9 @@ class LoginModal extends Component {
     clearData() {
         this.setState(this.baseState)
     }
-
+    componentDidMount() {
+        Modal.setAppElement('body');
+    }
 
     handleSubmit(event) {
         event.preventDefault();

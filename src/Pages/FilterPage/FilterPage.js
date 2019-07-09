@@ -188,7 +188,6 @@ class FilterPage extends React.Component {
 
     }
 
-
     getData() {
         //intial values for sorting
         let sortObj = [];

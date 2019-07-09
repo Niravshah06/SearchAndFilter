@@ -108,9 +108,6 @@ class FilterPage extends React.Component {
         }
         else
             alert("no matching result found!,please update searching crieteria");
-
-
-
     }
 
     //paging methods
@@ -139,8 +136,8 @@ class FilterPage extends React.Component {
     applyFilters(filter) {
         const filterName = filter.name;
         const checkboxes = filter.checkboxes;
-        let appliedFilters=this.state.appliedFilters;
-        let data =this.state.og_data;
+        let appliedFilters = this.state.appliedFilters;
+        let data = this.state.og_data;
         const filterValues = [];
         if (filter && filterName && checkboxes) {
             Object.keys(checkboxes).forEach((key) => {
@@ -149,24 +146,24 @@ class FilterPage extends React.Component {
                 }
             })
         }
-        appliedFilters[filterName]=filterValues;
+        appliedFilters[filterName] = filterValues;
         Object.keys(appliedFilters).forEach((key) => {
 
-            if ( appliedFilters[key].length > 0) {
+            if (appliedFilters[key].length > 0) {
                 data = _.filter(data, function (item) {
                     return appliedFilters[key].includes(item[key]);
                 });
             }
         })
 
-            this.setState({ appliedFilters: appliedFilters });
-            this.setState({ data: data });
-            this.setState({ activePage: 1 }, () => {
-                this.populateDisplayData(data);
-                this.sortResultsBy(this.state.sortObj);
-                this.updatePagingAttributes();
-            });
-        
+        this.setState({ appliedFilters: appliedFilters });
+        this.setState({ data: data });
+        this.setState({ activePage: 1 }, () => {
+            this.populateDisplayData(data);
+            this.sortResultsBy(this.state.sortObj);
+            this.updatePagingAttributes();
+        });
+
     }
 
     //populate filter based on data dynamically

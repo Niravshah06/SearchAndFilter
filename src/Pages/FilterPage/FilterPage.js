@@ -102,6 +102,8 @@ class FilterPage extends React.Component {
                 this.populateDisplayData(data);
                 this.sortResultsBy(this.state.sortObj);
                 this.updatePagingAttributes();
+                this.populateFilters();
+
             });
         }
         else

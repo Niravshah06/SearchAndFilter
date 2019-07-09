@@ -27,7 +27,7 @@ class FilterPage extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            og_data: [], data: [], displayData: [], filters: [],
+            og_data: [], data: [], displayData: [], filters: [], appliedFilters: [],
             activePage: 1,
             pageSize: 10,
             totalPages: 1,
@@ -137,8 +137,9 @@ class FilterPage extends React.Component {
     applyFilters(filter) {
         const filterName = filter.name;
         const checkboxes = filter.checkboxes;
+        let appliedFilters=this.state.appliedFilters;
+        let data =this.state.og_data;
         const filterValues = [];
-        let data = this.state.og_data;
         if (filter && filterName && checkboxes) {
             Object.keys(checkboxes).forEach((key) => {
                 if (checkboxes[key]) {
@@ -146,18 +147,24 @@ class FilterPage extends React.Component {
                 }
             })
         }
-        if (filterValues.length > 0) {
-            data = _.filter(data, function (item) {
-                return filterValues.includes(item[filterName]);
-            });
+        appliedFilters[filterName]=filterValues;
+        Object.keys(appliedFilters).forEach((key) => {
 
+            if ( appliedFilters[key].length > 0) {
+                data = _.filter(data, function (item) {
+                    return appliedFilters[key].includes(item[key]);
+                });
+            }
+        })
+
+            this.setState({ appliedFilters: appliedFilters });
             this.setState({ data: data });
             this.setState({ activePage: 1 }, () => {
                 this.populateDisplayData(data);
                 this.sortResultsBy(this.state.sortObj);
                 this.updatePagingAttributes();
             });
-        }
+        
     }
 
     //populate filter based on data dynamically

@@ -32,4 +32,15 @@ describe("SearchResults component", () => {
 
     });
 
+
+    test("renders search results when the articles change", () => {
+        const wrapper = mount(<SearchResults data={[]} />);
+    
+        wrapper.setProps({
+          data: [  { url: "http://google.com", title: "Google Search" }]
+        });
+    
+        expect(wrapper.find("a").prop("href")).toEqual("http://google.com");
+      });
+
 });

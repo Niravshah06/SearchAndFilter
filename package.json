@@ -2,9 +2,10 @@
   "name": "toolbox",
   "version": "0.1.0",
   "private": true,
+  "homepage": "hhtp://niravshah06/github.io/toolbox",
   "dependencies": {
     "@babel/core": "7.4.3",
-    "@svgr/webpack": "4.1.0",
+    "@svgr/webpack": "4 .1.0",
     "@typescript-eslint/eslint-plugin": "1.6.0",
     "@typescript-eslint/parser": "1.6.0",
     "axios": "^0.19.0",
@@ -69,7 +70,9 @@
   "scripts": {
     "start": "node scripts/start.js",
     "build": "node scripts/build.js",
-    "test": "node scripts/test.js"
+    "test": "node scripts/test.js",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -126,6 +129,7 @@
     ]
   },
   "devDependencies": {
+    "gh-pages": "^2.0.1",
     "node-sass": "^4.12.0",
     "sass-loader": "^7.1.0"
   }

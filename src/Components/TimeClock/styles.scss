@@ -1,0 +1,44 @@
+.preview_container{
+    display: none !important
+}
+
+.test{
+    width: 300px;
+}
+
+.time_picker_modal_header{
+   font-size: 12px;
+   margin: unset;
+   line-height: 40px;
+   height: 40px;
+   background-color: white;
+   font: 'Nunito Sans', 'Helvetica', 'Arial', sans-serif;
+
+   span{
+       color: black;
+       margin-left: 10px
+   }
+   
+}
+.picker_container{
+    background-color:#e2e2e2;
+    margin:10px 20px 20px;
+}
+
+.point_wrapper{
+    font-size: 11px;
+}
+.point_wrapper{
+    color: black;
+}
+.picker_point.picker_point point_inner{
+    color: black;
+}
+.time_picker_modal_container{
+    width: 300px;
+}
+
+.react_times_button{
+    width: 20px;
+height: 20px;
+}
